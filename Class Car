@@ -1,0 +1,129 @@
+
+/**
+ * @author coesp
+ *
+ */
+public class Car extends carDiagnostic {
+	
+      String name; 
+	  int mileage;
+	  String model;
+	  int year;
+	  int seats;
+	  int tankCapacity;
+	  
+	  // Declaring a constructor // 
+	  /*public Car(String carModel, int carMile, String carModel, int carYear, int carSeats, int carTankCap, String carName) {
+		  */
+	  
+	  public Car (String carName, String carModel, int carYear, int carMiles, int carTankCap, int carSeats) {
+		    mileage=carMiles;
+		    model=carModel;
+		    year=carYear;
+		    seats=carSeats;
+		  tankCapacity=carTankCap; 
+		  name=carName;
+	  }
+	  
+	  // Method starts here // 
+	  
+		// TODO Auto-generated constructor stub
+	
+	public void carStatus() {
+		  
+		System.out.println(" You are driving a(n) " + name + " model " + model +"," + " it is from " + year + " and has " + mileage + " miles. " + " Your car gas tank is " + tankCapacity + " gallons , and  has " 
+		+ seats + " seats. ");
+	  }
+	
+public void carDiag() {
+		
+		
+		if (mileage >= 1200) {
+			
+			System.out.println("Take your car to service");
+		}
+		
+		else {
+			
+			System.out.println("Your car is ok!");
+		}
+		
+		
+	}
+
+public void carNation() {
+	
+	if (name == "BMW" || name == "Aston Martin") {
+		System.out.println("Your car is European");
+	}
+		else if (name == "Nissan") {
+			System.out.println("Your car is Japanese");
+		}
+		else if (name == "Dodge") {
+			System.out.println("Your car is American");
+		}
+	
+		else {
+			System.out.println("Where is your car from?");
+		}
+	
+	
+}
+
+
+
+public void carCollection() {
+	
+	int year=2000;
+	 
+	 switch (year) {
+		 case (1990):System.out.println("Your car is from the 90´s"); 
+		  break; 
+		 case (2000):System.out.println("Your car is Modern"); 
+		  break;
+		 case (1980):System.out.println("Your car is Oldie"); 
+		 break;
+	 }
+	}
+	 
+
+
+
+
+	 /*
+	  * 
+	 
+	 *
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Car car1= new Car("BMW", " Barracuda ",1980 ,1200, 45, 4);
+     Car car2= new Car("Aston Martin", " Shark ", 2000 ,0, 60, 4);
+     Car car3=new Car("Nissan", " Maxima ", 1990,1000, 60, 4);
+     Car car4=new Car("Kia", " Polite ", 2000 ,1500, 40, 2);
+     
+     car1.carStatus(); 
+     car1.carDiag();
+     car1.carNation();
+     car1.carCollection();
+     
+     car2.carStatus(); 
+     car2.carDiag();
+     car2.carNation();
+     car2.carCollection();
+     
+     car3.carStatus(); 
+     car3.carDiag();
+     car3.carNation();
+     car3.carCollection();
+     
+     car4.carStatus(); 
+     car4.carDiag();
+     car4.carNation();
+     car4.carCollection();
+     
+	
+	}
+
+}
