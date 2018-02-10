@@ -1,0 +1,44 @@
+import java.io.; 
+import java.util.*;
+
+public class Square {
+	
+	
+	double area; 
+	double perimeter; 
+	
+	
+	// Declaring the function to obtain the area of a square// 
+ public void squareArea(double a, double b) {
+	  // declares area formula // 
+	  area=a*b; 
+	  // declares output for square area// 
+	  System.out.println("The area of a square of side "+ a + " * " + b + " is : " + area); 
+ }
+ 
+	// Declaring the function to obtain the perimeter of a square// 
+ public void squarePerimeter (double c, double d, double e, double f) {
+	 // declares perimeter formula // 
+	 perimeter=c+d+e+f; 
+	 
+	// declares output for square perimeter// 
+	 System.out.println("The perimeter of a square of sides "+ c + " + " + d + " + " + e + " + "+ f + " is : " + perimeter);
+ }
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  // Calling object sq1 from the class Square // 
+		Square sq1= new Square(); 
+		Square sq2= new Square(); 
+		
+		
+	    sq1.squareArea(2,2); 
+	    sq1.squarePerimeter(2,4,8,12);
+	    
+	    sq2.squareArea(4,20);   
+	    sq2.squarePerimeter(3,5,7,9); 
+	   
+	}
+
+}
