@@ -1,4 +1,4 @@
-import java.io.; 
+import java.io.*; 
 import java.util.*;
 
 public class Square {
@@ -6,6 +6,7 @@ public class Square {
 	
 	double area; 
 	double perimeter; 
+	double volume; 
 	
 	
 	// Declaring the function to obtain the area of a square// 
@@ -13,7 +14,7 @@ public class Square {
 	  // declares area formula // 
 	  area=a*b; 
 	  // declares output for square area// 
-	  System.out.println("The area of a square of side "+ a + " * " + b + " is : " + area); 
+	  System.out.println("The area of a square of sides "+ a + " * " + b + " is : " + area); 
  }
  
 	// Declaring the function to obtain the perimeter of a square// 
@@ -24,6 +25,13 @@ public class Square {
 	// declares output for square perimeter// 
 	 System.out.println("The perimeter of a square of sides "+ c + " + " + d + " + " + e + " + "+ f + " is : " + perimeter);
  }
+ 
+ public void cubeVolume(double x, double y, double z) {
+	 
+	      volume=x*y*z; 
+	      System.out.println("The volume of a cube of sides "+ x + " * " + y + " * " + z + " is : " + volume); 
+ 
+ }
 	
 	
 	public static void main(String[] args) {
@@ -31,14 +39,22 @@ public class Square {
   // Calling object sq1 from the class Square // 
 		Square sq1= new Square(); 
 		Square sq2= new Square(); 
-		
+		Square cub1= new Square(); 
+		Square cub2= new Square(); 
 		
 	    sq1.squareArea(2,2); 
+	    
 	    sq1.squarePerimeter(2,4,8,12);
 	    
+	    cub1.cubeVolume(5,2.3,6.2); 
+	    
 	    sq2.squareArea(4,20);   
+	    
 	    sq2.squarePerimeter(3,5,7,9); 
+	    
+	    cub2.cubeVolume(8,2.3,6.2); 
 	   
 	}
 
 }
+
