@@ -1,5 +1,5 @@
 public class Rectangle extends Square {
-	// In this code I apply the concept of polymorfism// 
+	// In this code I apply the concept of polymorphism// 
 	int area; 
 	int perimeter; 
 	int volume; 
