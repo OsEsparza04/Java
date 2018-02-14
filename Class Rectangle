@@ -1,0 +1,22 @@
+public class Rectangle extends Square {
+	// In this code I apply the concept of polymorfism// 
+	int area; 
+	int perimeter; 
+	int volume; 
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Creation of new object called rectangle1 
+		Square rectangle1= new Rectangle(); 
+		Square rectangle2= new Rectangle(); 
+		
+	 // Calling the objects created and using the method declared in the class Square // 
+		rectangle1.squareArea(3,6);
+		rectangle2.squareArea(8,6);
+		
+	}
+
+}
